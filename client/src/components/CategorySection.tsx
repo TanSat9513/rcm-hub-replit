@@ -56,21 +56,26 @@ export function CategorySection({
 
   return (
     <Card className="mb-6">
-      <CardHeader className="pb-3">
+      <CardHeader className="pb-4">
         <Button
           variant="ghost"
-          className="w-full p-0 flex items-center justify-between hover:bg-transparent"
+          className="w-full px-2 py-4 flex items-center justify-between hover:bg-transparent min-h-[90px]"
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          <div className="text-left">
-            <h2 className="text-xl font-bold text-gray-900">{category.name}</h2>
-            <p className="text-sm text-gray-600 mt-1">{category.description}</p>
+          <div className="text-left flex-1 pr-4">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{category.name}</h2>
+            <p className="text-sm text-gray-600 leading-relaxed">{category.description}</p>
           </div>
-          {isExpanded ? (
-            <ChevronUp className="w-5 h-5 text-gray-500" />
-          ) : (
-            <ChevronDown className="w-5 h-5 text-gray-500" />
-          )}
+          <div className="flex items-center space-x-3 flex-shrink-0">
+            <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+              {relevantCompanies.length} companies
+            </span>
+            {isExpanded ? (
+              <ChevronUp className="w-5 h-5 text-gray-500" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-gray-500" />
+            )}
+          </div>
         </Button>
       </CardHeader>
       
@@ -141,19 +146,21 @@ function SubcategorySection({ subcategory, companies, onCompanyClick }: Subcateg
     <div className="border border-gray-200 rounded-lg">
       <Button
         variant="ghost"
-        className="w-full p-4 flex items-center justify-between hover:bg-gray-50 rounded-lg"
+        className="w-full px-6 py-5 flex items-center justify-between hover:bg-gray-50 rounded-lg min-h-[80px]"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="text-left">
-          <h3 className="text-lg font-semibold text-gray-800">{subcategory.name}</h3>
-          <p className="text-sm text-gray-600 mt-1">{subcategory.description}</p>
+        <div className="text-left flex-1 pr-4">
+          <h3 className="text-lg font-semibold text-gray-800 mb-2">{subcategory.name}</h3>
+          <p className="text-sm text-gray-600 leading-relaxed">{subcategory.description}</p>
         </div>
-        <div className="flex items-center space-x-2">
-          <span className="text-sm text-gray-500">{companies.length} companies</span>
+        <div className="flex items-center space-x-3 flex-shrink-0">
+          <span className="text-sm font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+            {companies.length} companies
+          </span>
           {isExpanded ? (
-            <ChevronUp className="w-4 h-4 text-gray-500" />
+            <ChevronUp className="w-5 h-5 text-gray-500" />
           ) : (
-            <ChevronDown className="w-4 h-4 text-gray-500" />
+            <ChevronDown className="w-5 h-5 text-gray-500" />
           )}
         </div>
       </Button>
