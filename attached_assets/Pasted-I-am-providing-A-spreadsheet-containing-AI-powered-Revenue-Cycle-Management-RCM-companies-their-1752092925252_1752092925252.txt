@@ -1,0 +1,72 @@
+I am providing:
+
+A spreadsheet containing AI-powered Revenue Cycle Management (RCM) companies, their categories (e.g., Eligibility & Verification, Prior Authorization), and ranks (3 = High, 2 = Medium, 1 = Low, blank = Emerging).
+
+A Google Doc with detailed descriptions for each company, including why they are ranked as 3, 2, or 1 in each category, plus source hyperlinks.
+
+Using these inputs, create a professional and intuitive website designed for hospital executives (CIOs, CEOs, etc.) to research and compare AI Automated RCM companies.
+
+🏥 Project Name: RCM Intelligence Hub
+🏷️ Landing Page Title: AI-Powered Revenue Cycle Management Companies: Insights for Healthcare Leaders
+✅ Features to Include:
+Landing Page (Heatmap Overview)
+
+Display a one-page interactive heatmap with all companies organized by category and rank (color-coded for 3 = High, 2 = Medium, 1 = Low, Emerging).
+
+Each company is clickable to view more details.
+
+Company Detail Pages
+
+When clicking on a company, take users to a dedicated page showing:
+
+The company’s rank in each category.
+
+Detailed reasoning for each rank (from the Google Doc).
+
+Source hyperlinks for each data point.
+
+Filtering Options
+
+Add filters for:
+
+Category (e.g., Prior Authorization, AI Coding).
+
+Rank (3, 2, 1, Emerging).
+
+Funding stage (Seed, Series A/B/C) and total capital raised.
+
+PDF Export
+
+Allow users to generate and download a PDF report of the companies and categories they’ve filtered or selected.
+
+AI Data Enrichment (Optional)
+
+Use lightweight AI/web search to:
+
+Suggest additional companies for each category.
+
+Append funding data (amount raised, funding stage) and hyperlinks to sources.
+
+Design Considerations
+
+The UI must be visually appealing, simple, and executive-friendly:
+
+Use modern, minimalistic design.
+
+Prioritize large clickable areas, clear typography, and intuitive navigation.
+
+Performance Optimized for Free Plan
+
+Use React + Tailwind CSS for a lightweight front-end.
+
+Store company data in JSON from the spreadsheet (avoid unnecessary backend calls).
+
+Defer AI enrichment and external API requests to user-triggered actions.
+
+📎 Files Provided to Replit:
+
+Spreadsheet: structured company/category/rank data
+
+Google Doc: detailed descriptions with hyperlinks
+
+✅ Goal: Build a research tool for hospital executives to explore AI Automated RCM companies, compare them by category and rank, and export findings for use in internal strategy discussions.
