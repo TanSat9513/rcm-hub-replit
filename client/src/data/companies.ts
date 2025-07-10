@@ -7,7 +7,7 @@ export const companiesData: CompanyWithCategories[] = [
     description: "Infinx provides AI-driven patient access and RCM solutions with industry-leading accuracy rates.",
     website: "https://infinx.com",
     founded: "2009",
-    fundingStage: "Series B+",
+    fundingStage: "Series C",
     totalFunding: "$50M+",
     keyMetrics: [
       "98%+ accuracy rate in prior authorization",
