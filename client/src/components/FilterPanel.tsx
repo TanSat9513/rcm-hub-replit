@@ -17,19 +17,24 @@ export function FilterPanel({ filters, onFiltersChange, onExportFiltered }: Filt
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const categories = [
-    "Patient Access and Intake",
     "Eligibility & Verification",
     "Prior Authorization",
-    "Clinical Documentation",
     "Ambient AI Scribing",
     "CDI Prompt & Query",
-    "Coding & Charge Capture",
+    "Workflow Alignment",
     "AI Coding (Autonomous)",
     "Coding Validation",
     "Charge Capture",
-    "Claims Management",
-    "Denials Management",
-    "Patient Billing & Collections"
+    "Claims Scrubbing & Edits",
+    "Payer Rules Engines",
+    "First-Pass Error Resolution",
+    "Denial Triage & Categorization",
+    "Appeals Management",
+    "Root Cause Analysis",
+    "ERA/EFT Posting Automation",
+    "Payment Reconciliation",
+    "Digital Billing & Reminders",
+    "Accounts Receivable"
   ];
 
   const fundingStages = [
