@@ -11,16 +11,11 @@ interface CategorySectionProps {
   category: CategoryInfo;
   companies: CompanyWithCategories[];
   onCompanyClick: (company: CompanyWithCategories) => void;
-  defaultExpanded?: boolean;
+  selectedCategories?: string[];
 }
 
-export function CategorySection({ 
-  category, 
-  companies, 
-  onCompanyClick, 
-  defaultExpanded = true 
-}: CategorySectionProps) {
-  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
+export function CategorySection({ category, companies, onCompanyClick, selectedCategories = [] }: CategorySectionProps) {
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // Filter companies that have rankings in this category or its subcategories
   const relevantCompanies = companies.filter(company => {
@@ -28,7 +23,7 @@ export function CategorySection({
     if (category.subcategories) {
       categoryNames.push(...category.subcategories.map(sub => sub.name));
     }
-    
+
     return company.categoryRankings.some(ranking => 
       categoryNames.includes(ranking.categoryName)
     );
@@ -78,7 +73,7 @@ export function CategorySection({
           </div>
         </Button>
       </CardHeader>
-      
+
       <AnimatePresence>
         {isExpanded && (
           <motion.div
@@ -89,24 +84,31 @@ export function CategorySection({
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <CardContent className="pt-0">
-              {category.subcategories && category.subcategories.length > 0 ? (
-                // Render subcategories
+              {category.subcategories ? (
                 <div className="space-y-6">
-                  {category.subcategories.map((subcategory) => {
-                    const subcategoryCompanies = companiesBySubcategory[subcategory.name];
-                    if (!subcategoryCompanies || subcategoryCompanies.length === 0) {
-                      return null;
-                    }
-                    
-                    return (
-                      <SubcategorySection
-                        key={subcategory.id}
-                        subcategory={subcategory}
-                        companies={subcategoryCompanies}
-                        onCompanyClick={onCompanyClick}
-                      />
-                    );
-                  })}
+                  {category.subcategories
+                    .filter(subcategory => {
+                      // If categories are filtered, only show selected subcategories
+                      if (selectedCategories.length > 0) {
+                        return selectedCategories.includes(subcategory.name);
+                      }
+                      return true;
+                    })
+                    .map((subcategory) => {
+                      const subcategoryCompanies = companiesBySubcategory[subcategory.name];
+                      if (!subcategoryCompanies || subcategoryCompanies.length === 0) {
+                        return null;
+                      }
+
+                      return (
+                        <SubcategorySection
+                          key={subcategory.id}
+                          subcategory={subcategory}
+                          companies={subcategoryCompanies}
+                          onCompanyClick={onCompanyClick}
+                        />
+                      );
+                    })}
                 </div>
               ) : (
                 // Render companies directly if no subcategories
@@ -164,7 +166,7 @@ function SubcategorySection({ subcategory, companies, onCompanyClick }: Subcateg
           )}
         </div>
       </Button>
-      
+
       <AnimatePresence>
         {isExpanded && (
           <motion.div

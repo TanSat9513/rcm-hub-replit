@@ -180,14 +180,27 @@ export default function Home() {
 
         {/* Category Sections */}
         <div className="space-y-6">
-          {categoriesData.map((category) => (
-            <CategorySection
-              key={category.id}
-              category={category}
-              companies={filteredCompanies}
-              onCompanyClick={handleCompanyClick}
-            />
-          ))}
+          {categoriesData.map((category) => {
+            // If categories are filtered, only show categories that have selected subcategories
+            if (filters.selectedCategories.length > 0) {
+              const hasRelevantSubcategory = category.subcategories?.some(sub => 
+                filters.selectedCategories.includes(sub.name)
+              );
+              if (!hasRelevantSubcategory) {
+                return null;
+              }
+            }
+            
+            return (
+              <CategorySection
+                key={category.id}
+                category={category}
+                companies={filteredCompanies}
+                onCompanyClick={handleCompanyClick}
+                selectedCategories={filters.selectedCategories}
+              />
+            );
+          })}
         </div>
 
         {/* No Results */}

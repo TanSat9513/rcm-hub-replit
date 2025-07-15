@@ -26,26 +26,24 @@ export function FilterPanel({ filters, onFiltersChange, onExportFiltered }: Filt
     "Coding Validation",
     "Charge Capture",
     "Claims Scrubbing & Edits",
-    "Payer Rules Engines",
     "First-Pass Error Resolution",
     "Denial Triage & Categorization",
     "Appeals Management",
-    "Root Cause Analysis",
     "ERA/EFT Posting Automation",
     "Payment Reconciliation",
     "Digital Billing & Reminders",
     "Accounts Receivable"
   ];
 
-  const fundingStages = [
-    "Seed",
-    "Series A",
-    "Series B",
-    "Series B+",
-    "Series C",
-    "Series C+",
-    "Public"
-  ];
+  const fundingStages = []
+  //   "Seed",
+  //   "Series A",
+  //   "Series B",
+  //   "Series B+",
+  //   "Series C",
+  //   "Series C+",
+  //   "Public"
+  // ];
 
   const handleCategoryChange = (category: string, checked: boolean) => {
     const newCategories = checked
@@ -175,7 +173,7 @@ export function FilterPanel({ filters, onFiltersChange, onExportFiltered }: Filt
                 </div>
 
                 {/* Funding Stage Filter */}
-                <div>
+                {/* <div>
                   <h3 className="font-medium text-gray-900 mb-3">Funding Stage</h3>
                   <div className="space-y-2">
                     {fundingStages.map((stage) => (
@@ -196,7 +194,7 @@ export function FilterPanel({ filters, onFiltersChange, onExportFiltered }: Filt
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Quick Actions */}
                 <div>

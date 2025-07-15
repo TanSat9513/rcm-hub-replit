@@ -102,18 +102,11 @@ export const categoriesData: CategoryInfo[] = [
         sortOrder: 1
       },
       {
-        id: "payer-rules",
-        name: "Payer Rules Engines",
-        parentCategory: "Claims Management",
-        description: "Payer-specific rules and submission automation",
-        sortOrder: 2
-      },
-      {
         id: "first-pass",
         name: "First-Pass Error Resolution",
         parentCategory: "Claims Management",
         description: "First-pass claim error resolution",
-        sortOrder: 3
+        sortOrder: 2
       }
     ]
   },
@@ -136,13 +129,6 @@ export const categoriesData: CategoryInfo[] = [
         parentCategory: "Denials Management",
         description: "Automated appeals processing",
         sortOrder: 2
-      },
-      {
-        id: "root-cause",
-        name: "Root Cause Analysis",
-        parentCategory: "Denials Management",
-        description: "Root cause analysis and feedback",
-        sortOrder: 3
       }
     ]
   },
