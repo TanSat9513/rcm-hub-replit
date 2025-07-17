@@ -339,7 +339,7 @@ export const companiesData: CompanyWithCategories[] = [
     reasoning:
       "Maverick AI's autonomous, real-time medical coding with published 85% direct-to-bill rate at go-live and 97%+ accuracy significantly above industry averages.",
     sourceLinks: [
-      "https://maverick-ai.com/direct-to-bill-autonomous-medical-coding/",
+      "https://maverick-ai.com/direct-to-bill-autonomous-medical-coding/","https://maverick-ai.com/deeplearningai/",
       "https://maverick-ai.com/ai-autonomous-medical-coding-a-coders-perspective/",
     ],
     isAiNative: true,
