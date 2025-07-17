@@ -286,21 +286,21 @@ export const companiesData: CompanyWithCategories[] = [
     description:
       "Industry-leading autonomous medical coding platform with high accuracy and customer satisfaction.",
     website: "https://fathom.health",
-    founded: "2019",
-    fundingStage: "Series B+",
-    totalFunding: "$85M",
+    founded: "2016",
+    fundingStage: "Series B",
+    totalFunding: "$61M",
     keyMetrics: [
       "90% coding accuracy rate",
       "Significant reduction in charge lag time",
       "High customer satisfaction scores",
-      "Autonomous coding capabilities",
+      "Autonomous coding capabilities for E/M, CPT, and ICD-10",
     ],
     categories: [],
     reasoning:
       "Fathom is recognized as an industry leader in autonomous medical coding with exceptional accuracy rates and proven charge capture improvements.",
     sourceLinks: [
-      "https://fathom.health/solutions",
-      "https://fathom.health/case-studies",
+      "https://www.fathomhealth.com/insights/fathom-earns-100-high-customer-satisfaction-and-full-validation-of-90-coding-automation-rates-in-klas-spotlight-report",
+      "https://fathom.health/case-studies", "https://www.fathomhealth.com/insights/fathom-sets-new-industry-automation-rate-benchmark-with-96-live-coding-automation-for-emergency-departments",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -308,15 +308,15 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "AI Coding (Autonomous)",
         rank: 3,
         reasoning:
-          "Industry leader with 90% accuracy rate and high customer satisfaction in autonomous medical coding.",
-        sourceLinks: ["https://fathom.health/solutions/coding"],
+          "Industry leader with 90% accuracy rate and high customer satisfaction in autonomous medical coding. Solution is available within Epic Toolbox program",
+        sourceLinks: ["https://www.fathomhealth.com/insights/fathom-autonomous-medical-coding-available-in-epic-toolbox"],
       },
       {
         categoryName: "Charge Capture",
-        rank: 3,
+        rank: 2,
         reasoning:
-          "Mentions significant reduction in charge lag time with autonomous coding capabilities.",
-        sourceLinks: ["https://fathom.health/solutions/charge-capture"],
+          "Emphasizes reduction in charge lag time with autonomous coding capabilities. Lack of available statistics makes it hard to classify as a leader in this category.",
+        sourceLinks: ["https://www.fathomhealth.com/services"],
       },
     ],
   },
@@ -325,10 +325,10 @@ export const companiesData: CompanyWithCategories[] = [
     name: "Maverick AI",
     description:
       "Real-time medical coding platform with industry-leading direct-to-bill rates and accuracy.",
-    website: "https://maverick.ai",
-    founded: "2020",
-    fundingStage: "Series A",
-    totalFunding: "$35M",
+    website: "https://maverick-ai.com",
+    founded: "2018",
+    fundingStage: "Seed",
+    totalFunding: "$5M",
     keyMetrics: [
       "85% direct-to-bill rate",
       "97%+ accuracy in coding",
@@ -337,10 +337,10 @@ export const companiesData: CompanyWithCategories[] = [
     ],
     categories: [],
     reasoning:
-      "Maverick AI's autonomous, real-time medical coding with published 85% direct-to-bill rate and 97%+ accuracy significantly above industry averages.",
+      "Maverick AI's autonomous, real-time medical coding with published 85% direct-to-bill rate at go-live and 97%+ accuracy significantly above industry averages.",
     sourceLinks: [
-      "https://maverick.ai/solutions",
-      "https://maverick.ai/case-studies",
+      "https://maverick-ai.com/direct-to-bill-autonomous-medical-coding/",
+      "https://maverick-ai.com/ai-autonomous-medical-coding-a-coders-perspective/",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -349,14 +349,14 @@ export const companiesData: CompanyWithCategories[] = [
         rank: 3,
         reasoning:
           "Maverick AI's core offering is autonomous, real-time medical coding with a published 85% direct-to-bill rate and 97%+ accuracy, significantly above industry averages.",
-        sourceLinks: ["https://maverick.ai/solutions/coding"],
+        sourceLinks: ["https://maverick-ai.com/direct-to-bill-autonomous-medical-coding/"],
       },
       {
         categoryName: "Coding Validation",
         rank: 3,
         reasoning:
           "Maverick's platform is a next-generation coding validation tool, providing real-time coding suggestions, autonomous code generation, and validation.",
-        sourceLinks: ["https://maverick.ai/solutions/validation"],
+        sourceLinks: ["https://maverick-ai.com/deeplearningai/"],
       },
     ],
   },
