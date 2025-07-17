@@ -184,18 +184,32 @@ export function CompanyModal({ company, isOpen, onClose, onExportPDF }: CompanyM
                         )}
                         {ranking.sourceLinks && ranking.sourceLinks.length > 0 && (
                           <div className="flex flex-wrap gap-1">
-                            {ranking.sourceLinks.map((link, linkIndex) => (
-                              <Button
-                                key={linkIndex}
-                                variant="outline"
-                                size="sm"
-                                className="text-xs"
-                                onClick={() => window.open(link, '_blank')}
-                              >
-                                <ExternalLink className="w-3 h-3 mr-1" />
-                                Source {linkIndex + 1}
-                              </Button>
-                            ))}
+                            {(() => {
+                              // Get all source links from category rankings to maintain consistent numbering
+                              const allCategorySourceLinks = company.categoryRankings.flatMap(r => r.sourceLinks || []);
+                              const sourceLinkNumbers = new Map();
+                              let currentNumber = 1;
+                              
+                              // Number all category ranking source links first
+                              allCategorySourceLinks.forEach(link => {
+                                if (!sourceLinkNumbers.has(link)) {
+                                  sourceLinkNumbers.set(link, currentNumber++);
+                                }
+                              });
+                              
+                              return ranking.sourceLinks.map((link, linkIndex) => (
+                                <Button
+                                  key={linkIndex}
+                                  variant="outline"
+                                  size="sm"
+                                  className="text-xs"
+                                  onClick={() => window.open(link, '_blank')}
+                                >
+                                  <ExternalLink className="w-3 h-3 mr-1" />
+                                  Source {sourceLinkNumbers.get(link)}
+                                </Button>
+                              ));
+                            })()}
                           </div>
                         )}
                       </motion.div>
@@ -229,17 +243,42 @@ export function CompanyModal({ company, isOpen, onClose, onExportPDF }: CompanyM
                     </CardHeader>
                     <CardContent>
                       <div className="flex flex-wrap gap-2">
-                        {company.sourceLinks.map((link, index) => (
-                          <Button
-                            key={index}
-                            variant="outline"
-                            size="sm"
-                            onClick={() => window.open(link, '_blank')}
-                          >
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            Source {index + 1}
-                          </Button>
-                        ))}
+                        {(() => {
+                          // Get all source links from category rankings first
+                          const categorySourceLinks = company.categoryRankings.flatMap(ranking => 
+                            ranking.sourceLinks || []
+                          );
+                          
+                          // Create a map to track source link numbers
+                          const sourceLinkNumbers = new Map();
+                          let currentNumber = 1;
+                          
+                          // Number category ranking source links first
+                          categorySourceLinks.forEach(link => {
+                            if (!sourceLinkNumbers.has(link)) {
+                              sourceLinkNumbers.set(link, currentNumber++);
+                            }
+                          });
+                          
+                          // Then number any additional company source links
+                          company.sourceLinks.forEach(link => {
+                            if (!sourceLinkNumbers.has(link)) {
+                              sourceLinkNumbers.set(link, currentNumber++);
+                            }
+                          });
+                          
+                          return company.sourceLinks.map((link, index) => (
+                            <Button
+                              key={index}
+                              variant="outline"
+                              size="sm"
+                              onClick={() => window.open(link, '_blank')}
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Source {sourceLinkNumbers.get(link)}
+                            </Button>
+                          ));
+                        })()}
                       </div>
                     </CardContent>
                   </Card>
