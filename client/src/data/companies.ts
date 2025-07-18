@@ -364,11 +364,11 @@ export const companiesData: CompanyWithCategories[] = [
     id: 9,
     name: "Aspirion",
     description:
-      "Industry leader in appeals management and denial resolution with exceptional overturn rates.",
+      "Industry leader in appeals management and denial resolution with exceptional overturn rates, serving 12 of the nation's 15 largest health systems.",
     website: "https://aspirion.com",
-    founded: "2001",
-    fundingStage: "Series B+",
-    totalFunding: "$75M",
+    founded: "2006",
+    fundingStage: "Unknown",
+    totalFunding: "$Unknown",
     keyMetrics: [
       "90%+ day-1 clinical denials overturn rate",
       "40% expected reimbursement yield increase",
@@ -379,8 +379,8 @@ export const companiesData: CompanyWithCategories[] = [
     reasoning:
       "Aspirion demonstrates industry-leading performance in appeals management with overturn rates well above typical industry averages.",
     sourceLinks: [
-      "https://aspirion.com/solutions",
-      "https://aspirion.com/case-studies",
+      "https://www.aspirion.com/services/denials-management/",
+      "https://www.aspirion.com/services/payment-variance-recovery/", "https://www.aspirion.com/services/ar-management/", "https://www.aspirion.com/mounting-prior-authorization-denials-worsen-hospital-payer-relations/",
     ],
     isAiNative: false,
     categoryRankings: [
@@ -389,7 +389,28 @@ export const companiesData: CompanyWithCategories[] = [
         rank: 3,
         reasoning:
           "Aspirion is an industry leader in appeals management, with a 90%+ day-1 clinical denials overturn rate and a 40% expected reimbursement yield increase.",
-        sourceLinks: ["https://aspirion.com/solutions/appeals"],
+        sourceLinks: ["https://www.aspirion.com/services/denials-management/"],
+      },
+      {
+        categoryName: "Payment Reconciliation",
+        rank: 2,
+        reasoning:
+          "While primarily focused on denials management within RCM, Aspirion also offers underpayment detection services, highlighting a 35% underpayment revenue reduction, .25-1% net revenue lift, and 80% of claims paid within 90 days of appeal",
+        sourceLinks: ["https://www.aspirion.com/services/payment-variance-recovery/"],
+      },
+      {
+        categoryName: "Accounts Receivable",
+        rank: 3,
+        reasoning:
+          "Accelerating accounts receivable is one of Aspirion's key AI offerings. Their powerful combination of highly-skilled experts plus cutting-edge AI technology deliver industry-leading revenue recovery results across all payers—from commercial and government to MCOs and TPL. They offer a 90%+ underpayment reduction rate, ~10-12% reduction in AR days, have 60% of appeals paid within 90 days.",
+        sourceLinks: ["https://www.aspirion.com/services/ar-management/"],
+      },
+      {
+        categoryName: "Prior Authorization",
+        rank: 1,
+        reasoning:
+          "While they primarily focus on denials and AR, they also offer prior auth denials services. They advertise prior auth denial services, though do not have key metrics published making it an emerging offering.",
+        sourceLinks: ["https://www.aspirion.com/mounting-prior-authorization-denials-worsen-hospital-payer-relations/"],
       },
     ],
   },
@@ -399,21 +420,21 @@ export const companiesData: CompanyWithCategories[] = [
     description:
       "AI-powered revenue cycle automation platform with comprehensive RCM solutions.",
     website: "https://akasa.com",
-    founded: "2019",
+    founded: "2018",
     fundingStage: "Series B",
     totalFunding: "$60M",
     keyMetrics: [
       "AI-powered coding and authorization",
-      "Comprehensive RCM automation",
-      "Healthcare-specific AI agents",
-      "EHR integration capabilities",
+      "$3.1 M in potential revenue imapct",
+      "8x more coding opportunities compared to other solutions",
+      "40% higher coding accuracy vs. GPT-4",
     ],
     categories: [],
     reasoning:
       "AKASA provides AI-native RCM solutions with focus on coding and authorization automation.",
     sourceLinks: [
-      "https://akasa.com/solutions",
-      "https://akasa.com/case-studies",
+      "https://akasa.com/blog/why-medical-coding-needs-generative-ai/",
+      "https://akasa.com/press/akasa-debuts-cdi-optimizer/", "https://www.dhiwise.com/post/akasa-healthcare-revenue-cycle-automation-platform", "https://akasa.com/solutions/auth-status/",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -421,22 +442,29 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "AI Coding (Autonomous)",
         rank: 3,
         reasoning:
-          "AKASA Coding provides AI-powered autonomous medical coding with healthcare-specific optimization.",
-        sourceLinks: ["https://akasa.com/solutions/coding"],
+          "AKASA is an industry leader in AI coding, with its generative AI models platform delivering up to 85% medical coding accuracy. The system is trained on each health system’s unique data and links code recommendations to supporting clinical text. This improves coding precision, reduces denials, and drives better financial outcomes.",
+        sourceLinks: ["https://akasa.com/blog/why-medical-coding-needs-generative-ai/"],
+      },
+      {
+        categoryName: "CDI Prompt & Query",
+        rank: 3,
+        reasoning:
+          "AKASA’s CDI Optimizer reviews 100% of inpatient encounters, automatically identifying documentation gaps before billing. It surfaces only high-impact, evidence-backed queries, enabling efficient collaboration between CDI and coding teams. This leads to improved documentation quality and higher capture of clinical metrics.",
+        sourceLinks: ["https://akasa.com/press/akasa-debuts-cdi-optimizer/"],
+      },
+      {
+        categoryName: "Accounts Receivable",
+        rank: 2,
+        reasoning:
+          "AKASA’s revenue cycle automation streamlines workflows, lowers manual burden, and reduces cost-to-collect for large health systems, saving 300 hours of staff time each month. Its GenAI-driven platform helps organizations process claims faster and with fewer errors. This results in lower denial rates and improved reimbursement timelines",
+        sourceLinks: ["https://www.dhiwise.com/post/akasa-healthcare-revenue-cycle-automation-platform"],
       },
       {
         categoryName: "Prior Authorization",
         rank: 2,
         reasoning:
-          "AKASA Authorization Advisor provides AI-powered prior authorization assistance for providers.",
-        sourceLinks: ["https://akasa.com/solutions/authorization"],
-      },
-      {
-        categoryName: "ERA/EFT Posting Automation",
-        rank: 2,
-        reasoning:
-          "AKASA's comprehensive RCM automation platform includes AI agents for ERA/EFT posting with healthcare-specific optimization.",
-        sourceLinks: ["https://akasa.com/solutions/era-eft"],
+          "AKASA automates prior authorization by integrating GenAI to find payer requirements, extract documentation, and submit complete authorizations. The platform reduces work queue volumes by 22% and finds 15% more relevant clinical documentation to support thorough submissions. It’s a strong solution, but lacks the performance metrics as other companies in the space.",
+        sourceLinks: ["https://akasa.com/solutions/auth-status/"],
       },
     ],
   },
@@ -452,15 +480,15 @@ export const companiesData: CompanyWithCategories[] = [
     keyMetrics: [
       "Ambient clinical documentation",
       "Real-time CDI improvement",
-      "AI-powered documentation integrity",
-      "EHR workflow integration",
+      "27% fewer coding errors than board-certified physicians",
+      "$4.50 average revenue increase per E/M visit",
     ],
     categories: [],
     reasoning:
       "Ambience CDI focuses on ambient clinical documentation improvement with AI-powered real-time capabilities.",
     sourceLinks: [
-      "https://ambience.healthcare/solutions",
-      "https://ambience.healthcare/case-studies",
+      "https://www.ambiencehealthcare.com/product/cdi",
+      "https://www.ambiencehealthcare.com/product/outpatient",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -468,8 +496,15 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "CDI Prompt & Query",
         rank: 3,
         reasoning:
-          "Ambience CDI provides ambient clinical documentation improvement with AI-powered real-time capabilities.",
-        sourceLinks: ["https://ambience.healthcare/solutions/cdi"],
+          "Ambience CDI provides ambient clinical documentation improvement with AI-powered real-time capabilities. They offer 20% improvement in accurate diagnosis captured with MEAT-compliant criteria, 10% uplift in HCC capture, and $4.50 average revenue increase per E/M visit.",
+        sourceLinks: ["https://www.ambiencehealthcare.com/product/cdi"],
+      },
+      {
+        categoryName: "Ambient AI Scribing",
+        rank: 3,
+        reasoning:
+          "Ambience is an industry leader in ambient AI scribing, outperforming competing solutions with 70-80% clinician utilization—significantly higher than the industry average. Its platform generates a 38% average reduction in documentation time according to Epic UAL data and offers robust EHR integration, built-in coding awareness, and a model that speaks the unique language of each specialty and subspecialty.",
+        sourceLinks: ["https://www.ambiencehealthcare.com/product/outpatient"],
       },
     ],
   },
@@ -479,21 +514,21 @@ export const companiesData: CompanyWithCategories[] = [
     description:
       "AI-powered clinical documentation integrity platform with real-time capabilities.",
     website: "https://regard.com",
-    founded: "2021",
-    fundingStage: "Series A",
-    totalFunding: "$45M",
+    founded: "2017",
+    fundingStage: "Series B",
+    totalFunding: "$80M",
     keyMetrics: [
       "Real-time CDI capabilities",
-      "AI-powered documentation integrity",
-      "Clinical workflow integration",
-      "Documentation quality improvement",
+      "75% adoption across all partners ",
+      "Increased CC/MCC capture by 17% enabling a 4X ROI per user",
+      "$50 million in ROI for customers in 2024",
     ],
     categories: [],
     reasoning:
       "Regard provides AI-powered clinical documentation integrity with focus on real-time capabilities and quality improvement.",
     sourceLinks: [
-      "https://regard.com/solutions",
-      "https://regard.com/case-studies",
+      "https://regard.com/article/ai-and-proactive-documentation-transforming-healthcare-beyond-reactive-solutions/",
+      "https://regard.com/case-study/midwest-health-system-solutions-brief/", "https://regard.com/case-study/ai-close-clinical-insights-gap-for-proactive-documentation/",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -501,48 +536,48 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "CDI Prompt & Query",
         rank: 3,
         reasoning:
-          "Regard provides AI-powered clinical documentation integrity with real-time capabilities and quality improvement.",
-        sourceLinks: ["https://regard.com/solutions/cdi"],
+          "Regard’s AI powers proactive documentation that identifies documentation gaps and missing diagnoses before billing. Hospitals using Regard see over a 17% increase in capture of CC/MCCs, with 4x ROI per user, and producing a total of $50 million in ROI for all their customers. This comprehensive CDI approach, analyzing 100% of available patient data, positions Regard as a market leader in this category.",
+        sourceLinks: ["https://regard.com/article/ai-and-proactive-documentation-transforming-healthcare-beyond-reactive-solutions/"],
       },
     ],
   },
   {
     id: 13,
-    name: "Adonis Intelligence",
+    name: "Adonis",
     description:
       "AI-driven revenue cycle automation platform with comprehensive denials management.",
     website: "https://adonis.com",
-    founded: "2019",
-    fundingStage: "Series A",
-    totalFunding: "$31M",
+    founded: "2022",
+    fundingStage: "Series B",
+    totalFunding: "$54M",
     keyMetrics: [
-      "AI-driven revenue cycle automation",
-      "Comprehensive denials management",
+      "Works with over 3,000 different payers + 10,000 providers",
+      "Over 10,000 providers served, $13.3B in charges processed",
       "35+ EHR systems supported",
-      "Automated claim processing",
+      "90% success rate in autonomous issue resolution",
     ],
     categories: [],
     reasoning:
-      "Adonis Intelligence provides AI-driven revenue cycle automation with strong denials management capabilities.",
+      "Adonis provides AI-driven revenue cycle automation with strong denials management capabilities.",
     sourceLinks: [
-      "https://adonis.com/solutions",
-      "https://adonis.com/case-studies",
-    ],
+      "https://www.adonis.io/resources/claims-management-automation-with-ai-agents",
+      "https://www.adonis.io/case-study/25-fewer-denials-5-7x-roi-fox-valley-orthopedics-ai-powered-rcm-transformation",
+    "https://www.adonis.io/case-study/emergency-medicine-provider-boosts-financial-outcomes",],
     isAiNative: true,
     categoryRankings: [
       {
         categoryName: "Denial Triage & Categorization",
         rank: 3,
         reasoning:
-          "Adonis Intelligence provides AI-driven denials management with automated triage and categorization capabilities.",
-        sourceLinks: ["https://adonis.com/solutions/denials"],
+          "Adonis Intelligence help prioritize high-value claims, detect underpayments, and prevent denials proactively. The platform has proven a 90% success rate in autonomous issue resolution, fueling strong client revenue growth. Case studies have shown 25% fewer denials with 5.7x ROI.",
+        sourceLinks: ["https://www.adonis.io/resources/claims-management-automation-with-ai-agents"],
       },
       {
-        categoryName: "Payment Reconciliation",
+        categoryName: "Accounts Receivable",
         rank: 2,
         reasoning:
-          "Adonis Intelligence's AI-driven revenue cycle automation includes payment reconciliation capabilities across 35+ EHR systems.",
-        sourceLinks: ["https://adonis.com/solutions/reconciliation"],
+          "Adonis supports faster A/R cycles by reducing denials and automating collections workflows. Case studies have shown +22% AR collection velocity, recieving payment 14 days sooner on average. However, the platform is less focused on A/R than denials.",
+        sourceLinks: ["https://www.adonis.io/case-study/emergency-medicine-provider-boosts-financial-outcomes"],
       },
     ],
   },
@@ -552,21 +587,21 @@ export const companiesData: CompanyWithCategories[] = [
     description:
       "AI-powered patient payment optimization platform with predictive analytics.",
     website: "https://payzen.com",
-    founded: "2018",
+    founded: "2019",
     fundingStage: "Series B",
-    totalFunding: "$55M",
+    totalFunding: "$70M",
     keyMetrics: [
-      "AI-powered payment optimization",
-      "Predictive analytics for patient payments",
-      "Personalized payment plans",
+      "30% increase in patient collections after implementation",
+      "78% payment plan enrollment rate",
+      "Non-recourse financing and fast onboarding",
       "Bad debt reduction capabilities",
     ],
     categories: [],
     reasoning:
       "PayZen provides AI-powered patient payment optimization with predictive analytics and personalized payment solutions.",
     sourceLinks: [
-      "https://payzen.com/solutions",
-      "https://payzen.com/case-studies",
+      "https://payzen.com/essential-questions-to-ask-when-evaluating-a-patient-financing-partner/",
+      "https://payzen.com/",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -574,21 +609,21 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "Digital Billing & Reminders",
         rank: 3,
         reasoning:
-          "PayZen provides AI-powered patient payment optimization with predictive analytics and personalized payment solutions.",
-        sourceLinks: ["https://payzen.com/solutions/billing"],
+          "PayZen uses AI to analyze patient data and offer personalized, interest-free payment plans. By incorporating reminders and flexible payment options, providers using PayZen report a 32% increase in collections and a 30% reduction in bad debt.",
+        sourceLinks: ["https://payzen.com/essential-questions-to-ask-when-evaluating-a-patient-financing-partner/"],
       },
       {
-        categoryName: "Payment Reconciliation",
+        categoryName: "Accounts Receivable",
         rank: 2,
         reasoning:
-          "PayZen's AI-powered platform includes payment reconciliation capabilities with predictive analytics for optimizing payment collection.",
-        sourceLinks: ["https://payzen.com/solutions/reconciliation"],
+          "PayZen is a top performer in improving A/R by converting patient balances into guaranteed upfront revenue through AI-driven, non-recourse financing. They have demonstrated a 20% increase in pre-service patient collections and 10% lower cost to collect, lowering administrative burden.",
+        sourceLinks: ["https://payzen.com/"],
       },
     ],
   },
   {
     id: 15,
-    name: "Cedar Pay",
+    name: "Cedar",
     description:
       "Patient financial experience platform with AI-powered billing and payment solutions.",
     website: "https://cedar.com",
@@ -596,17 +631,17 @@ export const companiesData: CompanyWithCategories[] = [
     fundingStage: "Series C",
     totalFunding: "$200M",
     keyMetrics: [
-      "AI personalizes patient billing",
-      "35% increase in payment rates",
-      "40% improvement in patient acceptance",
-      "28% reduction in bad debt",
+      "30% increase in patient payments after implementation",
+      "73% median digital payment rate",
+      "95% digital self-service payment adoption",
+      "89–88% patient satisfaction rates",
     ],
     categories: [],
     reasoning:
       "Cedar Pay provides comprehensive patient financial experience with AI-powered billing optimization and payment solutions.",
     sourceLinks: [
-      "https://cedar.com/solutions",
-      "https://cedar.com/case-studies",
+      "",
+      "https://www.cedar.com/solutions/cedarpay/",
     ],
     isAiNative: true,
     categoryRankings: [
@@ -614,22 +649,22 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "Digital Billing & Reminders",
         rank: 3,
         reasoning:
-          "AI personalizes patient billing, increasing payment rates by 35% with comprehensive patient financial experience.",
+          "Cedar Pay is a leading digital billing and payment platform, delivering up to a 30% lift in patient payments and a 73% digital payment rate with automated, omni-channel reminders. Its powerful engagement, personalized payment options, and intuitive UX position it as an industry flagship for digital patient billing.",
         sourceLinks: ["https://cedar.com/solutions/billing"],
       },
       {
         categoryName: "Accounts Receivable",
         rank: 3,
         reasoning:
-          "Integrated financing options improve patient acceptance by 40% with predictive analytics creating optimized payment plans, reducing bad debt by 28%.",
-        sourceLinks: ["https://cedar.com/solutions/ar"],
+          "Cedar Pay drives faster collections and reduces A/R cycles by empowering patients to pay digitally, matching bills to EOBs, and surfacing HSA balances for immediate resolution. Providers consistently report increased cash flow, reduced cost to collect, and up to $15M+ annual payment lifts at system scale. ",
+        sourceLinks: ["https://www.cedar.com/solutions/cedarpay/"],
       },
       {
         categoryName: "Payment Reconciliation",
-        rank: 3,
+        rank: 1,
         reasoning:
-          "Cedar's comprehensive patient financial platform includes advanced payment reconciliation capabilities with predictive analytics for optimizing collections.",
-        sourceLinks: ["https://cedar.com/solutions/reconciliation"],
+          "Automated tracking from digital bills and payments through real-time dashboards streamlines payment reconciliation for patient charges. Cedar Pay integrates with provider billing and EHR systems for consolidated financial reporting, though it does not serve as an official reconciliation platform.",
+        sourceLinks: ["https://www.cedar.com/novant-health/"],
       },
     ],
   },
@@ -705,21 +740,21 @@ export const companiesData: CompanyWithCategories[] = [
     description:
       "AI-powered autonomous coding solution with natural language processing capabilities.",
     website: "https://nym.health",
-    founded: "2017",
+    founded: "2018",
     fundingStage: "Series A",
-    totalFunding: "$47M",
+    totalFunding: "$65M",
     keyMetrics: [
-      "AI-powered autonomous coding",
-      "Natural language processing",
-      "Automated code assignment",
-      "Clinical documentation analysis",
+      "Improve coding accuracy to over 95%",
+      "Reduce coding costs by up to 35%",
+      "Decrease time in accounts receivable by up to 5 days",
+      "Reduce claims denial rates by 50% ",
     ],
     categories: [],
     reasoning:
       "Nym provides AI-powered autonomous coding with advanced natural language processing for clinical documentation analysis.",
     sourceLinks: [
-      "https://nym.health/solutions",
-      "https://nym.health/case-studies",
+      "https://nym.health/product/autonomous-coding/",
+      "https://go.nym.health/health-system-reduces-costs-improves-revenue-capture-stabilizes-dnfb-autonomous-coding-case-study", "https://blog.nym.health/reducing-denials-with-autonomous-coding-medical-coding", "https://aviaconnectcontent.s3.amazonaws.com/f68a2971-5112-4581-8c9d-666d2b18b185", 
     ],
     isAiNative: true,
     categoryRankings: [
@@ -727,8 +762,29 @@ export const companiesData: CompanyWithCategories[] = [
         categoryName: "AI Coding (Autonomous)",
         rank: 3,
         reasoning:
-          "Nym provides AI-powered autonomous coding with natural language processing for clinical documentation analysis.",
-        sourceLinks: ["https://nym.health/solutions/coding"],
+          "Nym Health is an industry leader in fully autonomous medical coding, delivering over 95%–96% accuracy at scale. The platform processes millions of charts across complex specialties, resulting in substantial cost savings, rapid reimbursement, and widespread hospital adoption.",
+        sourceLinks: ["https://nym.health/product/autonomous-coding/"],
+      },
+      {
+        categoryName: "Charge Capture",
+        rank: 2,
+        reasoning:
+          "By ensuring accurate and complete code assignment from available documentation, Nym improves charge capture and compliance. This closes gaps in billable service assignment, though it operates as a coding automation engine rather than a dedicated charge capture platform.",
+        sourceLinks: ["https://go.nym.health/health-system-reduces-costs-improves-revenue-capture-stabilizes-dnfb-autonomous-coding-case-study"],
+      },
+      {
+        categoryName: "Denial Triage & Categorization",
+        rank: 3,
+        reasoning:
+          "Nym delivers industry-leading results in coding-related denial prevention and monitoring. With 97% decrease in radiology professional fee coding-related denial rate and reduced coding-related denials to less than 0.1%.",
+        sourceLinks: ["https://blog.nym.health/reducing-denials-with-autonomous-coding-medical-coding"],
+      },
+      {
+        categoryName: "Accounts Receivable",
+        rank: 2,
+        reasoning:
+          "Nym’s automation leads to a reduction of up to 5 days in A/R cycles by ensuring claims are coded correctly and released quickly. While this improves cash flow, the A/R capability is an indirect benefit of upstream automation rather than a dedicated A/R management feature.",
+        sourceLinks: ["https://aviaconnectcontent.s3.amazonaws.com/f68a2971-5112-4581-8c9d-666d2b18b185"],
       },
     ],
   },
@@ -767,34 +823,34 @@ export const companiesData: CompanyWithCategories[] = [
   },
   {
     id: 20,
-    name: "Collectly",
+    name: "Health Note",
     description:
-      "Digital patient billing and collection platform with AI-powered optimization.",
-    website: "https://collectly.com",
-    founded: "2019",
+      "Health Note’s intelligent voice and intake solutions streamline pre-visit workflows—automating routine conversations, improving patient experience, and optimizing access to care.",
+    website: "https://www.healthnote.com/",
+    founded: "2018",
     fundingStage: "Series A",
-    totalFunding: "$29M",
+    totalFunding: "$20M",
     keyMetrics: [
-      "Digital patient billing",
-      "AI-powered collection optimization",
-      "Automated payment reminders",
-      "Patient engagement tools",
+      "Captures over 500,000 visit summaries monthly",
+      "80–100% pre-visit patient intake completion rate",
+      "Increase data filed correctly in Epic to 71%",
+      "Accelerates reimbursement cycle and prompt error resolution",
     ],
     categories: [],
     reasoning:
-      "Collectly provides digital patient billing and collection with AI-powered optimization for improved patient engagement.",
+      "Health Note delivers digital patient intake and ambient AI scribing with intelligent automation for enhanced clinical documentation and patient experience.",
     sourceLinks: [
-      "https://collectly.com/solutions",
-      "https://collectly.com/case-studies",
+      "https://www.healthitoutcomes.com/doc/health-note-adds-ambient-ai-scribing-to-its-clinical-platform-0001",
+      "https://www.healthnote.com/health-note-for-epic/",
     ],
     isAiNative: true,
     categoryRankings: [
       {
-        categoryName: "Digital Billing & Reminders",
-        rank: 2,
+        categoryName: "Ambient AI Scribing",
+        rank: 3,
         reasoning:
-          "Collectly provides digital patient billing and collection with AI-powered optimization for improved patient engagement.",
-        sourceLinks: ["https://collectly.com/solutions/billing"],
+          "Health Note is an industry leader in ambient AI scribing, generating and structuring over 500,000 medical visit summaries each month using advanced NLP and generative AI. The solution collects 2.5x more relevant data, results in 50% reduction in clinical documentation, and has written 10.1 million clinical notes.",
+        sourceLinks: ["https://www.healthitoutcomes.com/doc/health-note-adds-ambient-ai-scribing-to-its-clinical-platform-0001"],
       },
     ],
   },
