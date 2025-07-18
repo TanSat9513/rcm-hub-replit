@@ -285,7 +285,7 @@ export const companiesData: CompanyWithCategories[] = [
     name: "Fathom",
     description:
       "Industry-leading autonomous medical coding platform with high accuracy and customer satisfaction.",
-    website: "https://fathom.health",
+    website: "https://fathomhealth.com/",
     founded: "2016",
     fundingStage: "Series B",
     totalFunding: "$61M",
